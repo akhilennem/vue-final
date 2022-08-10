@@ -170,7 +170,7 @@ import autoTable from 'jspdf-autotable';
             var temp1 = [dates.name, dates.email, dates.time, dates.sign, dates.date];
             rows1.push(temp1);
             doc.text("PTF Daily Attendance", 70, 20);
-            doc.text("Date :" + dates.name, 14, 35)
+            doc.text("Date :" + dates.date, 14, 35)
         });        
 
         doc.autoTable(col1, rows1, { startY: 40 });
